@@ -2,15 +2,23 @@ import React, { Component } from "react";
 
 import Card from "./components/Card/Card";
 
+import cover from "./assets/cover.png";
+import helmet from "./assets/helmet.png";
+import potion from "./assets/potion.png";
+import ring from "./assets/ring.png";
+import scroll from "./assets/scroll.png";
+import shield from "./assets/shield.png";
+import sword from "./assets/sword.png";
+
 import classes from "./App.module.css";
 
 const cardImages = [
-  { src: "/img/helmet-1.png" },
-  { src: "/img/potion-1.png" },
-  { src: "/img/ring-1.png" },
-  { src: "/img/scroll-1.png" },
-  { src: "/img/shield-1.png" },
-  { src: "/img/sword-1.png" },
+  { src: helmet },
+  { src: potion },
+  { src: ring },
+  { src: scroll },
+  { src: shield },
+  { src: sword },
 ];
 
 class App extends Component {
@@ -89,7 +97,7 @@ class App extends Component {
               }
               choose={this.handleChoice}
               front={card.src}
-              back={"/img/cover.png"}
+              back={cover}
             />
           ))}
         </div>
