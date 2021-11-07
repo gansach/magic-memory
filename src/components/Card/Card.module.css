@@ -1,0 +1,31 @@
+.Card {
+  position: relative;
+}
+
+.Card img {
+  width: 100%;
+  display: block;
+  border: 2px solid #fff;
+  border-radius: 6px;
+}
+
+.Card .Front {
+  transform: rotateY(90deg);
+  transition: all ease-in 0.2s;
+  position: absolute;
+}
+
+.Flipped .Front {
+  transform: rotateY(0deg);
+  transition-delay: 0.2s;
+}
+
+.Card .Back {
+  transition: all ease-in 0.2s;
+  transition-delay: 0.2s;
+}
+
+.Flipped .Back {
+  transform: rotateY(90deg);
+  transition-delay: 0s;
+}
